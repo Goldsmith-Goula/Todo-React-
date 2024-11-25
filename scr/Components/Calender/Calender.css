@@ -1,0 +1,73 @@
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding: 10px;
+  }
+  
+  .calendar-grid span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 16px;
+    
+  }
+
+  .day-header {
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 0;
+  }
+  
+  .calendar-grid span.today {
+    border: 2px solid var(--primary-color);
+  }
+  
+  .calendar-grid span.completed {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .calendar-grid span.overdue {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .calendar-grid span.pending {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .calendar-grid span.empty {
+    visibility: hidden;
+  }
+
+ 
+
+  .calendar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.calendar button {
+    background: #7a4dff;
+border-radius: 2rem;
+width: 2rem;
+height: 2rem;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+
+
+.empty {
+    visibility: hidden; /* Hide empty days */
+}
+
+  
